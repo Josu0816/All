@@ -34,7 +34,5 @@ class Program
   }
   Console.WriteLine ("Funktionierts ?");
   Console.WriteLine ("Jetzt ?");
-// neuer Commit 
-// ist das mit dabei ? 
 
 }

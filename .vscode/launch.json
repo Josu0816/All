@@ -5,14 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C#: <passwordgenerator.cs> Debug",
-            "type": "dotnet",
-            "request": "launch",
-            "projectPath": "${workspaceFolder}/<relative-path-to-project-folder><passwordgenerator >.csproj"
-        },
-        
-
-        {
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",

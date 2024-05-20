@@ -59,7 +59,7 @@ row_count = 1
 maximum_columns = 3
 
 for item in gui_items:
-    item.grid(row=row_count, column=column_count)
+    item.grid(row=row_count, column=column_count) 
 
     column_count += 1
     if column_count == maximum_columns:
@@ -68,4 +68,4 @@ for item in gui_items:
 
 
 if __name__ == '__main__':
-    window.mainloop()
+    window.mainloop() 

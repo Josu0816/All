@@ -68,4 +68,4 @@ for item in gui_items:
 
 
 if __name__ == '__main__':
-    window.mainloop() 
+    window.mainloop()

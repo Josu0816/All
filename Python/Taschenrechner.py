@@ -1,21 +1,21 @@
-import tkinter
+import tkinter # tkinter für das erstellen von separater Oberfläche(Window) für TR
 
-window = tkinter.Tk()
-window.geometry('150x220')
-window.title('Rechner')
+window = tkinter.Tk() # Window erstellen
+window.geometry('150x220') # Höhe und Breite des Fensters
+window.title('Rechner') # Überschrift des Fensters
 
-gui_items = list()
+gui_items = list() # Liste der Items der Tasten auf dem Rechner
 button_values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
-                 '+', '-', '*', '/', '=', 'AC']
+                 '+', '-', '*', '/', '=', 'AC'] # alle Variablen des Rechners
 
-calculation = str()
+calculation = str() # Berechnung der Zeile
 
 
-def add_button_text_to_calculation(value):
+def add_button_text_to_calculation(value): # Definition 
     global calculation
 
-    # AC (also known as 'ALL CLEAR') will clear the current calculation.
-    if value == 'AC':
+    
+    if value == 'AC':                       # AC als 
         calculation = str()
         output_label['text'] = '...'
         return
@@ -52,8 +52,8 @@ for val in button_values:
 output_label = tkinter.Label(text='Hallo.')
 output_label.grid(row=0, columnspan=10)
 
-# All buttons will be auto-placed in a grid
-# with maximum 3 columns and endless rows here:
+# autoplacen der symbole in Grid
+# max. 3 Säulen aber unendliche Zeilen 
 column_count = 0
 row_count = 1
 maximum_columns = 3

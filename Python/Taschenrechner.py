@@ -67,5 +67,5 @@ for item in gui_items:
         row_count += 1
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': 
     window.mainloop()

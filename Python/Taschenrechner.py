@@ -15,7 +15,7 @@ def add_button_text_to_calculation(value): # Definition
     global calculation
 
     
-    if value == 'AC':                       # AC als 
+    if value == 'AC':                       # AC als Löschtaste für alle strings im Fenster
         calculation = str()
         output_label['text'] = '...'
         return
@@ -49,7 +49,7 @@ for val in button_values:
     create_button(val)
 
 
-output_label = tkinter.Label(text='Hallo.')
+output_label = tkinter.Label(text='Rechnung: ')
 output_label.grid(row=0, columnspan=10)
 
 # autoplacen der symbole in Grid

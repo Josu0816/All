@@ -28,7 +28,6 @@ def add_button_text_to_calculation(value): # Definition
     calculation = calculation + value
     output_label['text'] = calculation
 
-
 def calculate(calc):
     try:
         result = eval(calc)
@@ -65,7 +64,6 @@ for item in gui_items:
     if column_count == maximum_columns:
         column_count = 0
         row_count += 1
-
 
 if __name__ == '__main__': 
     window.mainloop()

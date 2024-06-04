@@ -1,39 +1,5 @@
 {
     "configurations": [
-        {
-            "type": "lldb",
-            "request": "custom",
-            "name": "Custom launch",
-            "targetCreateCommands": [
-                "target create ${workspaceFolder}/<program>"
-            ],
-            "processCreateCommands": [
-                "settings set target.run-args value1 value2 value3",
-                "process launch"
-            ]
-        },
-        {
-            "type": "lldb",
-            "request": "attach",
-            "name": "Attach",
-            "program": "${workspaceFolder}/<program>"
-        },
-
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Launch",
-            "program": "${workspaceFolder}/<program>",
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "name": "Python Debugger: Current File with Arguments",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "args": "${command:pickArgs}"
-        }
+    
     ]
 }
